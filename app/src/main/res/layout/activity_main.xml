@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.kittipat.socket.MainActivity">
+
+   <android.support.v7.widget.AppCompatEditText
+       android:layout_width="150dp"
+       android:layout_height="wrap_content"
+       android:id="@+id/edtIPAddress"
+       android:text="distributiontracking.thainamthip.co.th"
+       android:hint=" IP Address"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPort"
+        android:text="5011"
+        android:layout_alignParentRight="true"
+        android:hint=" Port" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="25dp"
+        android:id="@+id/txvMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="40dp"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:layout_width="250dp"
+        android:id="@+id/edtMessage"
+        android:layout_height="wrap_content"
+        android:text="$MLTN002,070616,070208,13.72292N,100.53062E,000,000,079,0,00,G, 3528420747724678"
+        android:layout_alignTop="@+id/txvMessage"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+         />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edtMessage"
+        android:id="@+id/btnSend"
+        android:layout_marginTop="90dp"
+        android:layout_centerHorizontal="true"
+        android:text="Send"/>
+</RelativeLayout>
